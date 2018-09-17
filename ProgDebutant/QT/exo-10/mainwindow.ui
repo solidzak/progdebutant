@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>623</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>623</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufichier">
+    <property name="title">
+     <string>fichier</string>
+    </property>
+    <widget class="QMenu" name="menuOuvrir">
+     <property name="title">
+      <string>Ouvrir</string>
+     </property>
+     <addaction name="actionfichier"/>
+     <addaction name="actiondernier_fichier_ouvert"/>
+    </widget>
+    <addaction name="menuOuvrir"/>
+    <addaction name="actionQuiter"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionA_propos"/>
+   </widget>
+   <addaction name="menufichier"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuiter">
+   <property name="text">
+    <string>Quiter</string>
+   </property>
+  </action>
+  <action name="actionDernier_Fichier_Ouvert">
+   <property name="text">
+    <string>Dernier Fichier Ouvert</string>
+   </property>
+  </action>
+  <action name="actionA_propos">
+   <property name="text">
+    <string>A propos</string>
+   </property>
+  </action>
+  <action name="actionfichier">
+   <property name="text">
+    <string>fichier</string>
+   </property>
+  </action>
+  <action name="actiondernier_fichier_ouvert">
+   <property name="text">
+    <string>dernier fichier ouvert</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
